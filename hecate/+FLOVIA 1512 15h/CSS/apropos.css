@@ -1,0 +1,29 @@
+#quoi{
+    margin-top: 10rem;
+}
+
+#qui{
+    margin-top: 1rem;
+}
+
+#references{
+    margin-top: 5rem;
+}
+
+#references h2{
+    margin-bottom: 2rem;
+}
+#quoi *{
+    padding: 1rem;
+}
+
+#qui *{
+    padding: 1rem;
+}
+
+#references *{
+    padding: 0 1rem 0rem 1rem;
+}
+
+
+

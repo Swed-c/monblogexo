@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="./CSS/general.css">
+        <link rel="stylesheet" href="./CSS/profil.css">
+        <title>FLOVIA Profil</title>
+    </head>
+
+    <body>
+
+        <header>
+                <!-- navBar -->
+        <nav id="nav-general" class="navbar navbar-expand-lg navbar-dark fixed-top nav-bg">
+            <div class="container-fluid">
+
+              <a class="navbar-brand d-lg-none" href="#"><img src="./logopictoicone/logoflovia.svg" alt="logo Flovia 2"></a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse d-lg-flex justify-content-between" id="navbarNav">
+
+                <a class="navbar-brand d-none d-lg-block ps-5 ms-5" href="#"><img src="./logopictoicone/logoflovia.svg" alt="logo Flovia"></a>
+
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cartes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Épisodes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Actualités</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">A propos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navbar-brand d-lg-none" href="#">Profil</a>
+                  </li>
+                </ul>
+
+                <div>
+                    <a class="navbar-brand d-none d-lg-block pe-5 me-5"><img src="./logopictoicone/iconeprofilvide.svg" alt="Picto Profil"></a>
+                </div>
+
+              </div>
+            </div>
+        </nav>
+        <!-- Fin de navBar -->
+        </header>
+
+        <main>
+            <section id="connexion">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col">
+                            <h1>CONNEXION</h1>
+                            <form action="#">
+                                <div>
+                                    <input type="email" name="usermail" placeholder="Email">
+                                </div>
+                                <!-- JOJO je te laisse vérifier le input pour renseigner le mot de passe ^^ Merci  -->
+                                <div>
+                                    <input type="password" name="password" placeholder="Mot de passe">
+                                </div>
+                                <div>
+                                    <input type="submit" value="Se connecter">
+                                </div>
+                                <div>
+                                    <a href="#">Créer un compte</a>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+        </main>
+
+        <!-- footer  -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <section class="col-lg-4">
+                    <h3>NOUS CONTACTER</h3> 
+                    <div class="d-flex">
+                        <img src="./logopictoicone/logoflovia.svg" alt="Logo FLOVIA"> 
+                        <p id="blog">Aller lire notre <a href="#">BLOG</a></p>
+                    </div>
+                        <p>6bis rue du chaudron <br>75010 Paris</p>
+                    <div class="liensContact">
+                        <a href="#">Nous contacter</a>
+                        <a href="#">CGU</a>
+                    </div>
+                    <div class="d-flex RS" >
+                        <img src="./logopictoicone/IconFB.svg" alt="logo Facebook">
+                        <img src="./logopictoicone/IconTwitter.svg" alt="logo Twitter">
+                        <img src="./logopictoicone/IconInsta.svg" alt="logo Instagram">
+                    </div>
+                </section>
+    
+                <section class="col-lg-4">
+                    <h3>NOS RESSOURCES</h3>
+                    <p>Infos en temps réel: <a href="#">vigicrues.gouv.fr</a></p>
+                    <p>Infos sur le risque en France: <a href="#">georisques.gouv.fr</a></p>
+                    <p>Evaluation de la vulnérabilité: <a href="#">errial.georisques.gouv.fr</a></p>
+                </section>
+    
+                <section id="newsletter" class="col-lg-4">
+                    <h3>NOTRE NEWSLETTER</h3>
+                    <form action="#" >
+                        <p>Inscrivez-vous à notre newsletter et recevez chaque mois les actualités dans votre boîte mail</p>
+                        <input type="text" name="username" placeholder="Nom">
+                        <input type="email" name="usermail" placeholder="Email">
+                        <input type="submit" value="S'inscrire">
+                    </form>
+                    
+                </section>
+            </div>
+            <div class="copyright">
+                <p>Site conçu par Deviadux © 2022 - <a href="#">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer> 
+<!-- Fin du footer -->
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> 
+        <!-- JS BGD Nav-bar au scroll -->
+        <script src="./js/navbar.js"></script>
+    </body>
+</html>

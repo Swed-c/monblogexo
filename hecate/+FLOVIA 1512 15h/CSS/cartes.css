@@ -1,0 +1,35 @@
+#hoverHexago, #hoverPingo{
+    background-color: #01131B;
+    padding: 4rem 0rem;
+    
+}
+
+#choixCarte{
+    margin-top: 10rem;
+}
+
+#choixCarte h1{
+    margin-bottom: 3rem;
+}
+
+.cardCarte h2{
+    padding: 2rem 0;
+}
+
+.cardCarte {
+    border: 2px solid #F9FBFF;
+}
+
+#hoverHexago, #hoverPingo {
+    border: 2px solid #F9FBFF;
+}
+
+#hoverChoixCarte button {
+    border: none;
+    background-color: #F9FBFF;
+    padding: 0.5rem 1rem;
+}
+
+#hoverHexago p, #hoverPingo p{
+    padding: 2rem 5rem;
+}

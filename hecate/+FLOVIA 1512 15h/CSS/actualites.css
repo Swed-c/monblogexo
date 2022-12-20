@@ -1,0 +1,39 @@
+header{
+    background-image: url(../img/bgdheroshotactu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(1, 19, 27, 0.21);
+}
+
+header h1{
+    padding-top: 225px;
+    padding-bottom: 225px;
+}
+
+.img-fluid{
+    width: 100%;
+} 
+main p {
+    margin: 0 0 1rem 0;
+}
+
+main h2{
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+ }
+
+main h3,main p,main button {
+    margin: 2rem 0;
+ }
+
+
+.partagerEnregistrerText{
+    margin: 0;
+}
+
+#plusArticle article {
+    border: 2px solid #F9FBFF;
+ }
+
+

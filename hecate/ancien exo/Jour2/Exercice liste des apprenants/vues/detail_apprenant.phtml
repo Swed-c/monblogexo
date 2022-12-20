@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détail d'un apprenant</title>
+
+    <style>
+        blockquote {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Détail de l'apprenant</h1>
+    <strong>Nom&nbsp;: </strong><?= $apprenant['lastname'] ?><br>
+    <strong>Prénom&nbsp;: </strong><?= $apprenant['firstname'] ?><br>
+    <strong>Date de naissance&nbsp;: </strong><?= $apprenant['birthyear'] ?><br>
+    <strong>Ville de naissance&nbsp;: </strong><a href="https://www.google.fr/maps/place/<?= $apprenant['birthcity'] ?>"><?= $apprenant['birthcity'] ?></a><br>
+    <strong>Film préféré&nbsp;: </strong><a href="https://www.google.com/search?q=film+<?= $apprenant['lovedmovie'] ?>"><?= $apprenant['lovedmovie'] ?></a><br>
+    <strong>Chansson&nbsp;: </strong><a href="https://www.google.com/search?q=song+<?= $apprenant['lovedsong'] ?>"><?= $apprenant['lovedsong'] ?></a><br>
+    <strong>Citation&nbsp;: </strong>
+    <blockquote>"<?= $apprenant['lovedquote'] ?>"</blockquote><br>
+
+
+</body>
+
+</html>

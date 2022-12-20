@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #fceabb, #f8b500);
+  background-size: cover;
+  font-family: Montserrat, sans-serif;
+}
+
+header {
+  background: url("../images/twococktails2.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+}
+
+footer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  color: #19547b;
+  text-decoration: underline;
+  text-decoration-color: #19547b;
+}
+
+h4 {
+  color: #19547b;
+}
+
+.card {
+  height: 100%;
+}
+
+.container,
+.row {
+  width: 100%;
+}
+
+/* ***************** */

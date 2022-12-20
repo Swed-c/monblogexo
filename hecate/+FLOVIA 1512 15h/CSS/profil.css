@@ -1,0 +1,31 @@
+
+/* MAIN------------------------------------------- */
+main .container{
+    width: 1069px;
+    height: 568px;
+    border: solid 2px #F9FBFF;
+    padding: 50px 50px;
+    margin-top: 10rem;
+}
+
+main input{
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid #F9FBFF;
+    background-color: #01131B;
+    margin-top: 5%;
+    margin-bottom: 3%;   
+    color: #F9FBFF;
+}
+
+main input[type="submit"]{
+    background-color: #F9FBFF;
+    color: #01131B;
+    width: 30%;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    margin: 5%;
+    text-align: center;
+}

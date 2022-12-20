@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mister Cocktail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400">
+    <link rel="stylesheet" href="css/cocktails.css">
+</head>
+
+<body>
+
+    <?php include 'vues/nav.phtml'; ?>
+
+    <!-- DÉBUT DU HEADER -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-white">Ajouter un Cocktail</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- FIN DU HEADER -->
+
+
+    <!-- DÉBUT DU MAIN -->
+    <main>
+
+        <!-- Message ajout réussi -->
+        <?php if ($message) : ?>
+            <div class="col-12">
+                <div class="alert alert-<?= $messageType ?>" role="alert">
+                    <?= $message ?>
+                </div>
+            </div>
+        <?php endif; ?>
+
+
+        <!-- DÉBUT DE LA SECTION FORMULAIRE -->
+        <section id="add_cocktail" class="mt-5">
+
+            <div class="container">
+                <form action="" method="POST">
+                    <div class="d-flex justify-content-evenly">
+
+
+
+                        <div class="col-3">
+
+                            <!-- INPUTS FORMULAIRE ICI -->
+                            <div class="mb-3 ">
+                                <!-- <label for="name" class="form-label">Nom du cocktail</label> -->
+                                <input class="form-control form-control-lg" type="text" id="name" name="name" placeholder="Nom du cocktail" required value="">
+                            </div>
+
+                            <div class="mb-3">
+                                <!-- <label for="id_family" class="form-label">Famille</label> -->
+                                <select class="form-select form-select-sm" name="id_family" id="id_family" required>
+                                    <option value="" disabled selected>Base du cocktail</option>
+                                    <?php foreach ($families as $family) : ?>
+                                        <option value="<?= $family['id'] ?>"><?= $family['name'] ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <!-- <label for="image" class="form-label">Nom du fichier image</label> -->
+                                <!-- <input class="form-control form-control-sm" type="text"  name="image" id="image" placeholder="mon-cocktail.jpg" required value=""> -->
+                            </div>
+
+                            <div class="mb-3">
+                                <!-- <label for="year" class="form-label">Année</label> -->
+                                <input class="form-control form-control-sm" type="number" name="year" id="year" placeholder="Année" value="">
+                            </div>
+
+                            <div class="mb-3">
+                                <!-- <label for="price" class="form-label">Prix</label> -->
+                                <input class="form-control form-control-sm" type="number" step="0.10" name="price" id="price" placeholder="Prix" required value="">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="formFileSm" class="form-label">Ajoutez une image</label>
+                                <input class="form-control form-control-sm" id="formFileSm" type="file" name="image" id="image">
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="mb-3">
+                                <!-- <label for="description" class="form-label">Description</label> -->
+                                <textarea name="description" id="description" class="form-control" rows="9" placeholder="Décrivez votre cocktail..." required></textarea>
+                            </div>
+
+                            <div class="mb-3 text-center">
+                                <input type="submit" value="Enregistrer" class="btn btn-primary">
+                            </div>
+
+                        </div>
+
+
+
+                </form>
+            </div>
+        </section>
+        <!-- FIN DE LA SECTION LISTE DES COCKTAILS -->
+
+
+    </main>
+    <!-- FIN DU MAIN -->
+
+    <?php include 'vues/footer.phtml'; ?>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+
+</html>

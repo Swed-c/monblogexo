@@ -1,0 +1,104 @@
+*{
+  margin : 0;
+  padding: 0;
+}
+
+#map {
+  height: 700px;
+  width: 100%;
+  margin: auto;
+  }
+
+  :root {
+    --map-tiles-filter: brightness(0.65) invert(10) contrast(5) hue-rotate(0deg) saturate(0) brightness(0.6);
+}
+
+@media (prefers-color-scheme: dark) {
+    .map-tiles {
+        filter:var(--map-tiles-filter, none);
+	}
+}
+
+/* .leaflet-interactive:hover{
+  position: absolute;
+  scale: 1.5;
+}  */
+
+.leaflet-control-attribution{
+  display: none;
+}
+
+.leaflet-popup-content{
+  margin: 0px;
+  padding : 0px 20px 11px 20px;
+  color: black;
+  font-family: fantasy;
+  font-size: 0.5rem;
+  text-align: center;
+  max-width: 200px;
+  max-height: 200px;
+ } 
+
+  /* overflow-y: scroll; */
+
+  .leaflet-popup-content img{
+    width:100%;
+  }
+  .leaflet-popup-content h1, h2, h3{
+    padding: 0px 20px 0px 0px;
+  }
+
+  .leaflet-marker{
+    color: red;
+  }
+  
+  .leaflet-popup-content-wrapper{
+    border-radius: 0px;
+  }
+  .leaflet-control-attribution{
+    display:none;
+  }
+  
+
+  .bandemap{
+    background: black;
+    height: 125px;
+  }
+
+  .buttonmap{
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    font-size: larger;
+    text-align: center;
+    margin: auto;
+    padding-top: 39px;
+    padding-right: 75px;
+
+  }
+
+  .buttonm{
+    padding: 15px 20px 15px 20px;
+    border-radius: 0px;
+    background-color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .leaflet-container a.leaflet-popup-close-button{
+    color:black;
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+
+
+
+
+
+
+
+  
+
+

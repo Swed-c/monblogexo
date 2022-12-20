@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syncopate:wght@400;700&display=swap'); </style>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syncopate:wght@400;700&display=swap'); </style>
+    <title>FLOVIA Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="d-flex justify-content-between align-items-center">
+                <a href="#">
+                    <img src="#" alt="logo Flovia">
+                </a>
+                <ul class="d-flex justify-content-between">
+                    <li><a href="#">Carte</a></li>
+                    <li><a href="#">Episodes</a></li>
+                    <li><a href="#">Actualités</a></li>
+                    <li><a href="#">A propos</a></li>
+                </ul>
+                <a href="#"><img src="#" alt="Picto Profil">
+                </a>
+            </nav>
+            <div class="d-flex flex-column" id="titreHeroshot">
+                <h1>Découvrez les zones les plus impactées par la montée des eaux en France</h1>
+                <div>
+                    <a id="btn" href="#" >Voir la carte</a>
+                </div>
+            </div>
+        </div>
+        <!-- BarCookies à faire lorsqu'on actionne le "Button" croix A REMODULER -->
+        <div class="d-flex align-items-end flex-column
+        " id="cookiesBar">
+            <div>
+                <button><img src="#" alt="Picto croix"></button>
+            </div>
+            <div id="cookiesText">
+                <p>En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies pour réaliser des statistiques de visite. Pour en savoir plus <a id="cookiesLien" href="#">cliquez ici.</a></p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <article id="article">
+            <h1>Les articles à la une</h1>
+
+            <!-- CARROUSEL A COMPLETER -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../IMG Carrousel Home/article1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>La montée des eaux sera bien plus elevée et rapide que prévu</h5>
+                      <p>En lire plus</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../IMG Carrousel Home/article2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Les solutions fondées sur la nature</h5>
+                      <p>En lire plus</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../IMG Carrousel Home/article3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>M'informer sur le géorisque d'inondation</h5>
+                      <p>En lire plus</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+         </article >
+
+         <div id="donneesReelles">
+            <h1>Données réelles / prévisionnelles</h1>
+        </div>
+
+         <div class="dataViz">
+            <section>
+                <!-- Inserer ici la video de la dataViz Hexagone -->
+            </section>
+            <article>
+                <h3>L'évolution croissante du <b>nombre d'épisodes</b> vigilance orange et rouge inondations sur le territoire</h3>
+                <h4><b>Source:</b> Bilan annuel VIGICRUE 2021</h4>
+                <div class="d-flex">
+                    <div>
+                        <img src="#" alt="Picto Partager">
+                        <p>PARTAGER</p>
+                    </div>
+                    <div>
+                        <img src="#" alt="Picto Enregistrer">
+                        <p>ENREGISTRER</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+        <div class="dataViz">  
+            <article>
+                <h3>L'évolution de l'intensité des <b>pluies extêmes</b> en région méditerranéenne</h3>
+                <h4><b>Source:</b> Bilan annuel VIGICRUE 2021</h4>
+                <div class="d-flex">
+                    <div>
+                        <img src="#" alt="Picto Partager">
+                        <p>PARTAGER</p>
+                    </div>
+                    <div>
+                        <img src="#" alt="Picto Enregistrer">
+                        <p>ENREGISTRER</p>
+                    </div>
+                </div>
+            </article>
+            <section>
+                <!-- Inserer ici la video de la dataViz Graphique -->
+            </section>
+        </div>
+    
+       
+    
+        <div id="pictoInfo" class="container row text-center">
+            <article class="col-4">
+                <!-- changer les picto -->
+                <img class="picto" src="../Picto/picto.svg" alt="Picto Eau">
+                <h3>20K</h3>
+                <h2><b>Repères de crues</b><br>installés en France, témoins d'épisodes majeurs</h2> 
+            </article>
+            <article class="col-4">
+                <img class="picto" src="../Picto/picto-2.svg" alt="Picto Main">
+                <h3>80</h3>
+                <h2><b>Associations</b> d'aide aux personnes touchées par des phénoménes naturels</h2> 
+            </article>
+            <article class="col-4">
+                <img class="picto" src="../Picto/picto-1.svg" alt="Picto Carte">
+                <h3>22K</h3>
+                <h2><b>Km de cours d'eau</b> surveillés en permanence par Vigicrue.gouv</h2> 
+            </article> 
+        </div>
+
+        <section id="citation">
+            <p>"La communauté est une nappe affective souterraine et chacun boit la même eau à cette source" Michel Henry - Philosophe - 1990</p>
+        </section>
+       
+    </main>
+
+    <footer>
+        <div class="container row">
+            <article class="col-4">
+                <h2>NOUS CONTACTER</h2> 
+                <div>
+                    <img src="#" alt="Logo FLOVIA">
+                </div>
+                <h3>
+                    6bis rue du chaudron
+                    <br>
+                    75010 Paris
+                </h3>
+                <div>
+                    <a href="#">Nous contacter</a>
+                    <a href="#">Charte données personnelles</a>
+                    <a href="#">CGU</a>
+                </div>
+                <div class="d-flex justify-content-around">
+                    <img src="#" alt="logo Facebook">
+                    <img src="#" alt="logo Twitter">
+                    <img src="#" alt="logo Instagram">
+                </div>
+            </article>
+
+            <article class="col-4">
+                <h2>NOS RESSOURCES</h2>
+                <a href="#">vigicrues.gouv.fr</a>
+                <a href="#">georisques.gouv.fr</a>
+                <a href="#">errial.georisques.gouv.fr</a>
+            </article>
+
+            <article id="newsletter" class="col-4">
+                <h2>NOTRE NEWSLETTER</h2>
+                <form action="" class="d-flex flex-column align-items-center col-6 offset-2">
+                    <h3>Inscrivez-vous à notre newsletter et recevez chaque mois les actualités dans votre boîte mail</h3>
+                    <input type="text" name="username" placeholder="Nom">
+                    <input type="email" name="usermail" placeholder="Email">
+                    <input type="submit" value="S'inscrire">
+                </form> 
+            </article>
+         
+            <div class="copyright">
+                <p>Site conçu par Deviadux © 2022 - <a href="#">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer> 
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>  
+</body>
+</html>

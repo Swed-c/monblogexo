@@ -1,0 +1,1 @@
+LA PAGE A AFFICHE <?php echo $_GET['nb']; ?>

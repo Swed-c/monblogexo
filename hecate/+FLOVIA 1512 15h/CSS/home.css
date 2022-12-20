@@ -1,0 +1,200 @@
+/* 15/12 scrollX--------------------- */
+html, body{
+    overflow-x: hidden;
+}
+
+/* Heroshot---------------- */
+header{
+    height: auto;
+}
+
+#titreHeroshot {
+    position: absolute;
+    top: 25%;
+}
+
+#titreHeroshot h1 {
+    margin-bottom: revert;
+}
+
+#btn {
+    color: #01131B;
+    background-color: #F9FBFF;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#videoDiv{
+    object-fit: cover;
+}
+
+/* CookiesBar-------------------------------------- */
+#cookiesBar{
+    position: absolute;
+    z-index: 2;
+    top: 720px;
+    padding: 0;
+}
+#cookiesBar p {
+    text-align: center;
+    color:#01131B;
+    background-color: #F9FBFF;
+    padding : 0.5% 0.5% 0.5% 0.5%;
+}
+
+#cookiesBar a{
+    color: #01131B;
+}
+
+#cookiesBar button{
+    background-color: #01131B;
+    border: none;
+    padding: 0.5rem 0.5rem;
+}
+
+
+/* MAIN-------------------------------------------- */
+/* SECTION articleAlaUne--------------------------- */
+
+#articleAlaUne h1{
+    margin: 8rem 0 5rem;
+}
+
+#carouselExampleCaptions h5 {
+    text-transform: uppercase;
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.75) );
+}
+
+#carouselExampleCaptions p {
+    text-decoration: underline;
+}
+
+main b{
+    font-weight: 700;
+}
+
+#carouselExampleCaptions {
+    margin-bottom: 10rem;
+}
+
+/* SECTION dataViz------------------------------------------ */
+#dataViz h1{
+    margin-bottom: 5rem;
+}
+
+#dataViz h3{
+    font-family: 'Syncopate', 'Roboto', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+#dataViz h4{
+    /* font-size: 18px; */
+    font-family: 'Red+Hat+Display', sans-serif;
+    font-weight: lighter;
+    text-transform: initial;
+    font-size: 1rem;
+    padding: 0.8rem 0;
+} 
+
+.graphiqueText {
+    padding: 2rem 2rem;
+}
+
+
+.graphique {
+    position: relative;
+    padding: 4rem 4rem;
+    margin: 0 0 7rem 0;
+}
+
+.graphique::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(110.11deg, rgba(56, 210, 173, 0.47) -20.83%, #005664 25.71%, #142B33 63.59%);
+    z-index:-1;
+    filter: blur(7.5px);
+}
+
+#img-anim-hexa {
+    margin-bottom: 1rem;
+}
+
+#img-anim-pluie {
+    margin-top: 1rem;
+}
+
+/* SECTION pictoInfo--------------------------- */
+
+.chiffrePicto{
+    font-size: 250%;
+    margin: 1rem 0;
+}
+
+#pictoInfo {
+    margin-top: 11rem;
+}
+
+.picto {
+    padding-top: 3rem;
+}
+
+#pictoInfo h3 {
+    padding: 0 1rem;
+}
+
+/* SECTION citation---------------------------------- */
+
+#citation {
+    font-weight: bold;
+    font-weight: normal;
+    font-style: italic ;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 13rem;
+    padding-bottom: 6rem;
+}
+
+#citation h2, #citation p {
+    line-height: 1.45;
+}
+
+#citation p {
+    font-size: 1.3rem;
+    font-style: normal;
+    padding-top: 0.5rem;
+}
+
+.round {
+    height: 960px;
+    width: 980px;
+    background: linear-gradient(110.11deg, rgba(56, 210, 173, 0.47) -20.83%, #006d7d 25.71%, #142B33 63.59%);
+    position: absolute;
+    filter: blur(40px);
+    z-index: -1;
+    top: 35%;
+    left: -300px;
+    border-radius: 50%;
+}
+
+.round2 {
+    height: 900px;
+    width: 960px;
+    background:linear-gradient(254.54deg, rgba(56, 210, 192, 0.52) -31.41%, #005664 23.79%, #142B33 60.47%);
+    position: absolute;
+    filter: blur(40px);
+    z-index: -1;
+    bottom: -3400px;
+    right:-400px;
+    border-radius: 50%;
+}
+
+
+/*------------------- Modale --------------------------- */

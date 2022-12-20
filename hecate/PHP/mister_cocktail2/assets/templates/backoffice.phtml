@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mister Cocktail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/cocktails.css">
+    <!-- Charger CSS de bootstrap, police Montserrat sur Google Fonts et le CSS de l'application -->
+</head>
+<body class="container-fluid">
+    <nav>
+    <?php include "assets/templates/navbar.phtml"?>
+    </nav>
+
+    <h2>Back Office</h2>
+    <main>
+        <!-- La variable $cocktails vient d'index.php qui a stocké les données de la base SQL dans cette variable -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nom</th>
+                    <th>Description</th>
+                    <th colspan="2"></th>
+                </tr>
+            </thead>
+            <tbody>
+                  
+              <?php foreach($cocktails as $key){ ?>
+                    <tr>
+                        <td><?=$key['id']?></td>
+                        <td><?=$key['name']?></td>
+                        <!-- Afin d'éviter une faille XSS la description est converti en texte non interprété par le navigateur web -->
+                        <td><?=htmlentities($key['description'])?></td>
+                        <td><a href="edit_cocktails.php?id=<?=$key['id']?>">Edition</a></td>
+                        <td><a href="delete_cocktails.php?id=<?=$key['id']?>">Suppression</a></td>
+                    </tr>
+
+                    <?php } ?>
+                
+            </tbody>
+        </table>
+    </main>

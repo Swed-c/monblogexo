@@ -1,0 +1,157 @@
+body{
+    background-color: #01131B;
+    color: #F9FBFF;
+}
+h1,h2,h3 {font-family: 'Monoton', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Syncopate', sans-serif;
+    text-transform: uppercase ;
+}
+h4,p,button,ul{
+font-family: 'Monoton', cursive;
+font-family: 'Red Hat Display', sans-serif;
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Syncopate', sans-serif; */
+}
+/* h1{
+    font-size: 42px;
+} 
+h2{
+    font-size: 36px;
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    font-size: 18px;
+}
+p{
+    font-size: 12px;
+}
+button{
+    font-size: 32px;
+} */
+
+/* HEADER---------------------------------------- */
+#titreHeroshot{
+    padding-top: 220px;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 48px;
+    color: #F9FBFF;
+}
+#btn {
+    color: #01131B;
+    background-color: white;
+    padding: 15px 80px;
+    font-size: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #F9FBFF;
+}
+ul{
+    list-style-type: none;
+}
+#cookiesBar {
+    padding-top: 222px;
+}
+#cookiesText,#cookiesLien{
+    color: #01131B;
+    background-color: #F9FBFF;
+    text-align: center;
+}
+
+.dataViz p{
+    font-size: 12px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: lighter;
+}
+
+#carouselExampleCaptions{
+    width: 1520px;
+    height: 522px;
+}
+#carouselExampleCaptions h5 {
+    text-transform: uppercase;
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.75) );
+}
+
+#carouselExampleCaptions p {
+    text-decoration: underline;
+}
+/* MAIN-------------------------------------------- */
+/* main h1{
+    font-family: 'Syncopate', sans-serif;
+    font-size: 42px;
+} */
+
+#article h1{
+    padding-top: 120px;
+    padding-bottom: 70px;
+}
+
+.dataViz h1{
+    padding-top: 200px;
+    padding-bottom: 46px;
+}
+
+.picto{
+   filter: invert(100%) saturate(100%) brightness(100%) contrast(100%);
+   margin: 10px;
+}
+
+#pictoInfo {
+    margin-top: 160px;
+    margin-bottom: 182px;
+}
+
+#pictoInfo h3{
+    font-size: 70px ;
+    margin: 10px;
+}
+
+#pictoInfo h2{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: normal;
+    text-transform: initial;
+    margin: 10px;
+}
+
+#citation p{
+    font-size: 48px;
+    font-weight: bold;
+    font-weight: normal;
+    font-style: italic ;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.dataViz{
+    width: 420px;
+    height: 396;
+    margin: 10px;
+}
+
+#donneesReelles{
+    margin-top: 200px;
+    margin-bottom: 70px;
+}
+/* FOOTER----------------------------------------- */
+footer{
+    padding: 0 135px;
+}
+
+.copyright{
+    text-align: center;
+}
+
+footer form[type="submit"]{
+    width: 100%;
+    border: none;
+    margin-bottom: 1rem;
+}
+

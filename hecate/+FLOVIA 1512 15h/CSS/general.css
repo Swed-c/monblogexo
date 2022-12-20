@@ -1,0 +1,220 @@
+/**************** IMPORTS ******************/
+/* *************** Grille *************** */
+/***************** Globales ************** */
+body{
+    background-color: #01131B;
+    color: #F9FBFF;
+}
+
+a {
+    color: #F9FBFF;
+}
+
+a:hover {
+    color: #38D2AD;
+}
+
+/* **************** Typographie ********* */
+/* Syncopate */
+/* @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400&display=swap'); */
+@font-face {
+    font-family: 'Syncopate';
+    src: url(../fonts/Syncopate-Regular.ttf) ;
+}
+
+@font-face {
+font-family: 'Red+Hat+Display';
+    src: url(../fonts/RedHatDisplay-Regular.ttf);
+    src: url(../fonts/RedHatDisplay-Light.ttf);
+}
+
+/* Red hat display */
+/* @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.h1, .h2, .h4, h1, h2, h4 {
+    margin-top: 0;
+    margin-bottom: 0rem;
+    font-weight: 500;
+  }
+
+h1,h2,h4 {
+    font-family: 'Syncopate', 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1.
+    45;
+}
+
+
+
+h3,p,button,ul{
+    font-family: 'Red+Hat+Display', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Syncopate', sans-serif; */
+}
+
+.partagerEnregistrerText{
+    font-size: 12px;
+    font-family: 'Red+Hat+Display', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 0rem;
+    font-size: 0.6rem;
+}
+/* ************** Images & icones ****** */
+
+.icon {
+    padding : 1rem 1rem 0.4rem 1rem;
+}
+
+.icon2 {
+    padding : 1rem 1rem 0.4rem 1rem;
+}
+
+.enregistrerIcon {
+    margin-left: 1rem;
+}
+/* **************** Nav-Bar *************/
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #F9FBFF;
+    padding: 1.8rem 2rem;
+    align-items: center;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    text-decoration: underline;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #F9FBFF;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.ms-5 {
+    margin: 0;
+}
+
+    /* aspect de la nav-Bar au scroll */
+.nav-bg{
+    background-color: #01131B;
+}
+
+/***************** FOOTER ****************/
+
+footer{
+    background-color: #01131B;
+    border-top: 2px solid #F9FBFF;
+    margin-top: 10rem;
+}
+
+footer h3{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+#blog {
+    padding: 1rem 0rem 0rem 1rem ;
+}
+
+.liensContact a{
+    padding-right: 1rem;
+}
+.RS img{
+    padding-top: 1.5rem;
+    padding-right: 1rem;
+}
+.copyright{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer input[type=text]{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #F9FBFF;
+    outline: none; 
+    background-color: #01131B;
+    color: #F9FBFF;
+} 
+
+footer input[type=email]{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #F9FBFF;
+    outline: none; 
+    background-color: #01131B;
+    color: #F9FBFF;
+    margin: 1rem 0;
+} 
+
+
+#newsletter form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+footer input[type="submit"]{
+    background-color: #F9FBFF;
+    color: #01131B;
+    font-weight: lighter;
+    padding: 0.8rem 2rem;
+    margin-top: 1rem;
+    border: none;
+    
+    
+
+   /*  float:right; */
+    
+    /* border-radius: 0% 4% 4% 0% #011131B; */
+}
+
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #cccccc;
+
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  }
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #eeeeee;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+  }
+  .close-button {
+    float: right;
+    width: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: #eeeeee;
+  }
+  .close-button:hover {
+    background-color: #adadad;
+  }
+  .show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  }

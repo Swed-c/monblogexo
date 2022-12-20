@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+Voici le formulaire
+
+    {{ form_start(form) }}
+        {{ form_label(form.title) }}
+        {{ form_widget(form.title) }}
+        ===============================
+        {{ form_row(form.description) }}
+        ===============================
+        {{ form_row(form.created_at) }}
+        {{ form_row(form.submit) }}
+    {{ form_end(form, {render_rest: false}) }}
+{% endblock %}
